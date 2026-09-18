@@ -4,3 +4,5 @@
 
 /* final image-free editorial menu */
 .menu-item{position:relative;border-radius:2px;background:transparent;border:0;border-top:1px solid #ded9ce;box-shadow:none!important;padding:18px 4px;min-height:112px}.menu-item:hover{transform:none;background:#ffffff70}.menu-item h3{font-size:17px}.menu-item p{font-size:11px;line-height:1.5;color:#777;margin:7px 0 0}.menu-thumb{display:none!important}.menu-category{grid-template-columns:repeat(3,minmax(0,1fr));gap:0 32px}.cat-title{margin-bottom:8px}.footer-links{display:flex;gap:18px;align-items:center}.footer-links a{color:inherit;font-size:11px;text-decoration:none;border-bottom:1px solid #ffffff55}footer small{display:block;margin-top:8px;opacity:.55;font-size:9px}@media(max-width:900px){.menu-category{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:650px){.menu-category{grid-template-columns:1fr!important}.menu-item{padding:16px 2px;min-height:90px}footer span{display:none}}
+
+.group-tabs,#resultInfo{display:none!important}
