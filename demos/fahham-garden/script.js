@@ -1,0 +1,4 @@
+document.querySelectorAll('.reveal').forEach(el=>new IntersectionObserver(([e],o)=>{if(e.isIntersecting){e.target.classList.add('in');o.disconnect()}},{threshold:.12}).observe(el));
+const cats=document.querySelectorAll('#categories button'), sections=document.querySelectorAll('.menu-category'), search=document.querySelector('#search');
+function apply(){if(!cats.length)return;const active=document.querySelector('#categories .active')?.dataset.filter||'all',q=(search?.value||'').toLocaleLowerCase('tr');sections.forEach(s=>{const catOk=active==='all'||s.dataset.cat===active;let visible=0;s.querySelectorAll('.menu-item').forEach(i=>{const ok=i.textContent.toLocaleLowerCase('tr').includes(q);i.style.display=ok?'flex':'none';if(ok)visible++});s.style.display=catOk&&visible?'block':'none'})}
+cats.forEach(b=>b.addEventListener('click',()=>{cats.forEach(x=>x.classList.remove('active'));b.classList.add('active');apply()}));search?.addEventListener('input',apply);
