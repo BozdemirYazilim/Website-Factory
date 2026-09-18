@@ -1,4 +1,3 @@
-document.querySelectorAll('.reveal').forEach(el=>new IntersectionObserver(([e],o)=>{if(e.isIntersecting){e.target.classList.add('in');o.disconnect()}},{threshold:.12}).observe(el));
 const data=[
 ['Güne Başlarken','food',[['Fahham Serpme Kahvaltı (2 Kişilik)','1500']]],
 ['Omlet & Sahanda Lezzetler','food',[['Mantarlı Omlet','230'],['Beyaz Peynirli Omlet','230'],['Sade Omlet','210'],['Kaşar Peynirli Omlet','240'],['Sucuklu Omlet','240'],['Kuymak','380'],['Sahanda Sucuk','205'],['Sahanda Yumurta','190'],['Sahanda Menemen','230'],['Sahanda Kaşarlı Menemen','250'],['Sahanda Sucuklu Menemen','270'],['Sahanda Sucuklu Yumurta','240'],['Sahanda Kavurmalı Yumurta','330'],['Sahanda Kıymalı Yumurta','300']]],
